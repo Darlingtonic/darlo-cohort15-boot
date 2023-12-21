@@ -8,7 +8,23 @@
     <script src="https://kit.fontawesome.com/7cc9218ac4.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1 style="text-align: center;">Bootstrap 5 alert asssignment</h1>
-    
+    <h1 class="text-center w-100" style="color: blue;">Bootstrap 5 alert asssignment</h1>
+    <div class="bg-primary text-white w-75 m-auto text-start ps-5"> Bootstrap notification</div>
+    <div class="bg-primary mt-4 w-75 m-auto ps-2 alert alert-primary text-dark" role="alert">This is a primary alert-check it out</div>
+    <div class="bg-secondary mt-4 w-75 m-auto ps-2 alert alert-primary text-dark" role="alert">This is a primary alert-check it out</div>
+    <div class="bg-danger mt-4 w-75 m-auto ps-2 alert alert-primary text-dark" role="alert">This is a danger alert with <a href="" class="alert-link text-dark">an example link</a> Give it a check if you like</div>
+    <div class="bg-warning mt-4 w-75 m-auto ps-2 alert alert-primarytext-dark" role="alert">This is a warning alert with <a href="" class="alert-link text-dark">an example link</a> Give it a check if you like </div>
+    <p class="m-auto mt-5 w-75 fs-5 fw-bold" >Material design notifications</p>
+ 
+     <!-- Info message -->
+<div class="position-absolute"> 
+<a class="btn btn-info"   style="position:relative;right: -110%;"  onclick="toastr.info('Hi! I am info message.');">Info message</a>
+<!-- Warning message -->
+<a class="btn btn-warning" style="position:relative;right: -10%;" onclick="toastr.warning('Hi! I am warning message.');">Warning message</a>
+<!-- Success message -->
+<a class="btn btn-success " style="position:absolute; top: 100%;right:-8%"     onclick="toastr.success('Hi! I am success message.');">Success message</a>
+<!-- Error message -->
+<a class="btn btn-danger  " style="position: absolute; top: 100%; right:-55%;" onclick="toastr.error('Hi! I am error message.');">Error message</a>
+</div>
 </body>
 </html>
